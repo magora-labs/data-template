@@ -19,11 +19,11 @@
   "dependencies": {},
   "optionalDependencies": {},
   "devDependencies": {
-    "changelog42": "0.5.0",
-    "eslint": "0.21.2",
-    "istanbul": "0.3.15",
-    "mocha": "2.2.5",
-    "next-update": "0.7.9"
+    "changelog42": "0.7.0",
+    "eslint": "1.8.0",
+    "istanbul": "0.4.0",
+    "mocha": "2.3.3",
+    "next-update": "0.9.5"
   },
   "scripts": {
     "lint": "eslint ./",
