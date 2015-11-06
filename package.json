@@ -1,0 +1,36 @@
+{
+  "name": "data-template",
+  "version": "0.0.1",
+  "description": "A template for assets data-packages",
+  "keywords": [
+    "data",
+    "template"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "name",
+    "email": "email"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git-url"
+  },
+  "private": true,
+  "dependencies": {},
+  "optionalDependencies": {},
+  "devDependencies": {
+    "changelog42": "0.5.0",
+    "eslint": "0.21.2",
+    "istanbul": "0.3.15",
+    "mocha": "2.2.5",
+    "next-update": "0.7.9"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "npm run lint && istanbul cover _mocha -- ./test",
+    "update": "next-update -k",
+    "log": "changelog42 --no-author --commit-url=https://github.com/magora-labs/data-template/commit",
+    "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm -f npm-debug.log",
+    "postinstall": "if test -d .git/hooks; then echo '#!/bin/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit; fi"
+  }
+}
