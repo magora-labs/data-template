@@ -9,15 +9,16 @@ Stability: 1 - Experimental
 **basics**
 
  - `.eslintrc` & `.eslintignore` - style rules closely follow google's javascript style guide
+ - `.sass-lint.yml`
  - `.gitignore` & `.npmignore`
  - MIT [LICENSE](./LICENSE)
  - a index.mustache
 
 **package.json scripts**
 
- - `npm test` - eslint + istanbul + mocha
+ - `npm test` - eslint + sass-lint + istanbul + mocha
  - `npm install` - will add a pre-commit hook which runs `npm test` (existing hooks will be overwritten)
- - `npm run lint` - eslint
+ - `npm run lint` - eslint + sass-lint
  - `npm run update` - next-update
  - `npm run log` - generate a markdown formatted changelog
  - `npm run clean` - rm `coverage/`, `node_modules`, `npm-debug.log`
