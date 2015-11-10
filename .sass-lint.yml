@@ -33,7 +33,7 @@ rules:
   clean-import-paths:
     - 1
     - filename-extension: false
-      leading-underscore: false
+      leading-underscore: true
   empty-line-between-blocks:
     - 1
     - ignore-single-line-rulesets: true
