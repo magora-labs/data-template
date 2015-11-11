@@ -73,5 +73,8 @@
   "globals": {},
   "env": {
     "browser": true
-  }
+  },
+  "plugins": [
+    "html"
+  ]
 }
