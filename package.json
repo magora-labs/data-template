@@ -21,7 +21,7 @@
   "devDependencies": {
     "changelog42": "0.7.0",
     "eslint": "1.9.0",
-    "eslint-plugin-html": "1.1.0",
+    "eslint-plugin-html": "git+https://github.com/BenoitZugmeyer/eslint-plugin-html.git",
     "htmllint-cli": "0.0.4",
     "istanbul": "0.4.0",
     "mocha": "2.3.3",
