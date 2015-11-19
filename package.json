@@ -28,7 +28,10 @@
     "sass-lint": "1.3.2"
   },
   "scripts": {
-    "lint": "eslint ./ && sass-lint -qv && htmllint www/**/*.{html,mustache}",
+    "eslint": "eslint ./",
+    "sass-lint": "sass-lint -qv",
+    "htmllint": "htmllint www/**/*.{html,mustache}",
+    "lint": "npm run eslint && npm run sass-lint && npm run htmllint",
     "test": "npm run lint && istanbul cover _mocha -- ./test",
     "update": "next-update -k",
     "log": "changelog42 --no-author --commit-url=https://github.com/magora-labs/data-template/commit",
