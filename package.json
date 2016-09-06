@@ -19,8 +19,8 @@
   "dependencies": {},
   "optionalDependencies": {},
   "devDependencies": {
-    "changelog42": "0.7.0",
-    "eslint": "1.8.0"
+    "changelog42": "0.9.0",
+    "eslint": "3.4.0"
   },
   "scripts": {
     "lint": "eslint ./",
