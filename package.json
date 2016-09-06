@@ -20,7 +20,8 @@
   "optionalDependencies": {},
   "devDependencies": {
     "changelog42": "0.9.0",
-    "eslint": "3.4.0"
+    "eslint": "3.4.0",
+    "mgl-eslint-rules-browser": "1.3.0"
   },
   "scripts": {
     "lint": "eslint ./",
