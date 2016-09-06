@@ -10,32 +10,29 @@ Stability: 1 - Experimental
 
  - `.eslintrc` & `.eslintignore` - style rules closely follow google's javascript style guide
  - `.gitignore` & `.npmignore`
+ - `bower.json` & `.bowerrc`
  - MIT [LICENSE](./LICENSE)
- - a index.mustache
+ - a `index.mustache` in the *default* theme
 
 **package.json scripts**
 
- - `npm test` - eslint + istanbul + mocha
- - `npm install` - will add a pre-commit hook which runs `npm test` (existing hooks will be overwritten)
+ - `npm test` - eslint
+ - `npm install`
+   - runs `bower i` and
+   - will add a pre-commit hook which runs `npm test` (existing hooks will be overwritten)
  - `npm run lint` - eslint
- - `npm run update` - next-update
  - `npm run log` - generate a markdown formatted changelog
- - `npm run clean` - rm `coverage/`, `node_modules`, `npm-debug.log`
+ - `npm run clean` - rm `node_modules`, `npm-debug.log`
+
+**bower**
+
+If you want to use *bower*, please install it globally
+```
+npm i -g bower
+```
+if *not* you can safely follow these steps
+
+  - remove `bower i` from the [postinstall script](./package.json) and
+  - remove the [`.bowerrc`](./.bowerrc) and [`bower.json`](./bower.json) files
 
 [**Download**](https://github.com/magora-labs/data-template/archive/master.zip)
-
-## Tests
-
-```bash
-npm test
-firefox coverage/lcov-report/index.html
-```
-
-### Coverage
-
-```
-Statements   : XX.XX% ( YY/ZZ )
-Branches     : XX.XX% ( YY/ZZ )
-Functions    : XX.XX% ( YY/ZZ )
-Lines        : XX.XX% ( YY/ZZ )
-```
