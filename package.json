@@ -27,6 +27,6 @@
     "test": "npm run lint",
     "log": "changelog42 --no-author --commit-url=https://github.com/magora-labs/data-template/commit",
     "clean": "rm -rf node_modules/ && rm -f npm-debug.log",
-    "postinstall": "if test -d .git/hooks; then echo '#!/bin/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit; fi"
+    "postinstall": "bower i && if test -d .git/hooks; then echo '#!/bin/sh\\nnpm test' > .git/hooks/pre-commit && chmod u+x .git/hooks/pre-commit; fi"
   }
 }
