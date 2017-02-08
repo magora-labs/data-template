@@ -35,7 +35,6 @@ npm i -g bower
 ```
 if *not* you can safely follow these steps
 
-  - remove `bower i` from the [postinstall script](./package.json) and
   - remove the [`.bowerrc`](./.bowerrc) and [`bower.json`](./bower.json) files
 
 [**Download**](https://github.com/magora-labs/data-template/archive/master.zip)
