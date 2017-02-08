@@ -6,6 +6,9 @@
 Stability: 1 - Experimental
 ```
 
+- [`ChangeLog`](./CHANGELOG.markdown)
+
+
 **basics**
 
  - `.eslintrc` & `.eslintignore` - style rules closely follow google's javascript style guide
@@ -36,3 +39,12 @@ if *not* you can safely follow these steps
   - remove the [`.bowerrc`](./.bowerrc) and [`bower.json`](./bower.json) files
 
 [**Download**](https://github.com/magora-labs/data-template/archive/master.zip)
+
+## Tests
+
+```
+Branches     : Unknown% ( 0/0 )
+Statements   : Unknown% ( 0/0 )
+Functions    : Unknown% ( 0/0 )
+Lines        : Unknown% ( 0/0 )
+```
