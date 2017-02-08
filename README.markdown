@@ -22,7 +22,7 @@ Stability: 1 - Experimental
  - `npm test` - eslint, istanbul + nyc and mocha
  - `npm run lint` - eslint
  - `npm run log` - generate a markdown formatted changelog
- - `npm run clean` - rm `node_modules`, `npm-debug.log`
+ - `npm run clean` - rm `node_modules`, `npm-debug.log`, `bower_componets`, `coverage`, `.nyc_output`
 
 **bower**
 

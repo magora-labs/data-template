@@ -27,5 +27,5 @@
     "lint": "eslint ./",
     "test": "npm run lint && nyc --exclude=node_modules --exclude=test --reporter=lcov --reporter=text --reporter=text-summary --reporter=json-summary _mocha ./test/*.test.js",
     "log": "changelog42 --commit-url=https://github.com/magora-labs/data-template/commit",
-    "clean": "rm -rf node_modules/ && rm -f npm-debug.log"
+    "clean": "rm -rf node_modules/ && rm -f npm-debug.log && rm -rf www/themes/default/misc/bower_components/ && rm -rf coverage/ && rm -rf .nyc_output/"
 }
