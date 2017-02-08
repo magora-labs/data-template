@@ -19,10 +19,7 @@ Stability: 1 - Experimental
 
 **package.json scripts**
 
- - `npm test` - eslint
- - `npm install`
-   - runs `bower i` and
-   - will add a pre-commit hook which runs `npm test` (existing hooks will be overwritten)
+ - `npm test` - eslint, istanbul + nyc and mocha
  - `npm run lint` - eslint
  - `npm run log` - generate a markdown formatted changelog
  - `npm run clean` - rm `node_modules`, `npm-debug.log`
